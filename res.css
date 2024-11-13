@@ -1,0 +1,240 @@
+
+.title{
+    text-align: center;
+    font-family: serif;
+    font-size: 50px;
+    color: #120d0f;
+    margin: 20px;
+}
+
+
+.brief-info{
+    display: flex;
+}
+
+.brief-info_1{
+    color: #120d0f;
+    font-style: italic;
+    font-size: 20px;
+    margin: 10px 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.photo{
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 400px;
+    position: absolute;
+    right: 10px;
+    z-index: -1;
+}
+
+.content_studies{
+    display: flex;
+}
+
+.studies_1{
+    color: rgba(18, 13, 15, 0.5);
+}
+
+.studies_2{
+    margin-left: 50px;
+}
+
+ul{
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* -------------------------------------------------------------*/
+
+
+* {box-sizing:border-box}
+
+.container_1 {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: white;
+}
+
+.django {width: 60%; background-color: #04aa6a;}
+.python {width: 60%; background-color: #04aaaa;}
+.docker {width: 80%; background-color: #e1763d;}
+.postgresql {width: 70%; background-color: rgba(117, 24, 163, 0.73);}
+.html {width: 70%; background-color: #120d0f;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.excel {width: 80%; background-color: #808080;}
+
+
+/* -------------------------------------------------------------*/
+
+
+.collapsible {
+    background-color: #b1baba;
+    color: #120d0f;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius: 10px;
+
+}
+
+.active, .collapsible:hover {
+    background-color: #494944;
+}
+
+.content_1 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #b1baba;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.collapsible:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+
+/* -------------------------------------------------------------*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #474e5d;
+    font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after, .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0%;
+    }
+}
