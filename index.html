@@ -2,24 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-     <link href="res.css" rel="stylesheet" type="text/css">
     <title>Резюме</title>
+
+    <link href="res.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Neucha&family=Unbounded&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <h1 class="title">Резюме</h1>
-<div class="brief-info">
-    <div class="brief-info_1">
-        <h3>Анзоров Микаэль Увайсович</h3>
-        <h3>Fullstack Разработчик на Python</h3>
-    <p>Дата рождения: 19.07.1984 г.р.</p>
-    <p>Место проживания: г.Грозный.</p>
-    <p>Гражданство: Россия.</p>
-    <p>Полная занятость.</p>
-    <p>Опыт работы: 3 года.</p>
-    </div>
-<img class="photo" src="image/Изображение%2033.jpg" alt="my face" width="300">
-</div>
 
+    <div class="brief-info">
+        <div class="brief-info_1">
+            <h3>Анзоров Микаэль Увайсович</h3>
+            <h3>Fullstack Разработчик на Python</h3>
+            <p>Дата рождения: 19.07.1984 г.р.</p>
+            <p>Место проживания: г.Грозный.</p>
+            <p>Гражданство: Россия.</p>
+            <p>Полная занятость.</p>
+            <p>Опыт работы: 3 года.</p>
+        </div>
+        <div class="brief-info_2">
+            <img class="photo" src="image/Изображение%2033.jpg" alt="my face" width="300">
+        </div>
+    </div>
 
 <button type="button" class="collapsible">Опыт работы</button>
 <div class="content_1">
@@ -39,7 +47,7 @@
                 <ul> Должностные обязанности:
                     <li>Составление сводных таблиц.</li>
                     <li>Внесение данных в базу.</li>
-                    <li>Проверка и архивация документации.</li>
+                    <li>Приёмка, проверка и архивация документации.</li>
                 </ul>
             </div>
         </div>
@@ -121,7 +129,7 @@
 
 <button type="button" class="collapsible">Информация о себе</button>
 <div class="content_1">
-<ul>
+<ul class="self_info">
     <li>Место проживания г. Грозный</li>
     <li>Женат, имею четверо детей</li>
     <li>Хобби: Crossfit</li>
@@ -133,7 +141,7 @@
 
 <button type="button" class="collapsible">Контакты</button>
 <div class="content_1">
-    <ul>
+    <ul class="self_info">
         <li>Телефон: 8(938)024-04-66</li>
         <li>e-mail: anz.mikail@mail.ru</li>
     </ul>

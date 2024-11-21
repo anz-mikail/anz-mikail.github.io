@@ -1,33 +1,67 @@
+@font-face {
+    src: url('fonts/Caveat-Bold.ttf');
+    font-family: "Caveat";
+}
+
+@font-face {
+    src: url('fonts/Unbounded-Regular.ttf');
+    font-family: "Unbounded";
+}
+
+@font-face {
+    src: url('fonts/Neucha-Regular.ttf');
+    font-family: "Neucha";
+}
 
 .title{
     text-align: center;
-    font-family: serif;
-    font-size: 50px;
+    font-family: "Unbounded", Helvetica, italic, sans-serif;
+    font-size: 60px;
     color: #120d0f;
     margin: 20px;
 }
 
 
 .brief-info{
-    display: flex;
+    font-family: serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,  minmax(250px, 1fr));
 }
 
 .brief-info_1{
-    color: #120d0f;
-    font-style: italic;
-    font-size: 20px;
+    color: #4e0e0e;
+    font-family: "Caveat", Helvetica, sans-serif;
+    font-size: 25px;
     margin: 10px 10px;
-    width: 400px;
-    height: 400px;
+    width: 430px;
+    height: 430px;
+}
+.brief-info_1:hover{
+    color: #120d0f;
+    font-family: "Neucha", Helvetica, sans-serif;
+    /*font-size: 35px;*/
+    /*height: 600px;*/
+    /*width: 600px;*/
+}
+
+.brief-info_2{
+    display: flex;
+    justify-content: right;
+    margin: 10px 10px;
+    height: 430px;
+    z-index: -1;
+}
+
+.brief-info_2:hover{
+    height: 600px;
+    width: 600px;
 }
 
 .photo{
     border: 3px solid black;
     border-radius: 10px;
-    height: 400px;
-    position: absolute;
-    right: 10px;
-    z-index: -1;
+    height: 430px;
+    width: 330px;
 }
 
 .content_studies{
@@ -40,11 +74,6 @@
 
 .studies_2{
     margin-left: 50px;
-}
-
-ul{
-    font-style: italic;
-    font-size: 20px;
 }
 
 /* -------------------------------------------------------------*/
@@ -85,14 +114,16 @@ ul{
     width: 100%;
     text-align: left;
     outline: none;
-    font-size: 25px;
+    font-size: 40px;
     border: 3px solid black;
     border-radius: 10px;
+    font-family: "Caveat", Helvetica, italic, sans-serif;
 
 }
 
 .active, .collapsible:hover {
     background-color: #494944;
+    font-family: "Neucha", Helvetica, italic, sans-serif;
 }
 
 .content_1 {
@@ -102,6 +133,13 @@ ul{
     background-color: #b1baba;
     width: 100%;
     border-radius: 10px;
+    font-family: "Caveat", Helvetica, italic, sans-serif;
+    font-size: 25px;
+}
+
+.content_1:hover{
+    font-family: "Neucha", Helvetica, sans-serif;
+    color: #08278f;
 }
 
 .collapsible:after {
