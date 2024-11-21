@@ -21,6 +21,10 @@
     margin: 20px;
 }
 
+.title:hover{
+    color: #4e0e0e;
+}
+
 
 .brief-info{
     font-family: serif;
@@ -29,19 +33,15 @@
 }
 
 .brief-info_1{
-    color: #4e0e0e;
-    font-family: "Caveat", Helvetica, sans-serif;
+    color: #120d0f;
+    font-family: "Neucha", Helvetica, sans-serif;
     font-size: 25px;
     margin: 10px 10px;
     width: 430px;
     height: 430px;
 }
 .brief-info_1:hover{
-    color: #120d0f;
-    font-family: "Neucha", Helvetica, sans-serif;
-    /*font-size: 35px;*/
-    /*height: 600px;*/
-    /*width: 600px;*/
+    color: #4e0e0e;
 }
 
 .brief-info_2{
@@ -74,6 +74,12 @@
 
 .studies_2{
     margin-left: 50px;
+}
+
+button:focus-visible{
+    border: 5px solid #231319;
+    background-color: #494944;
+    font-family: "Neucha", Helvetica, italic, sans-serif;
 }
 
 /* -------------------------------------------------------------*/
@@ -118,12 +124,13 @@
     border: 3px solid black;
     border-radius: 10px;
     font-family: "Caveat", Helvetica, italic, sans-serif;
-
 }
+
 
 .active, .collapsible:hover {
     background-color: #494944;
     font-family: "Neucha", Helvetica, italic, sans-serif;
+    color: #4e0e0e;
 }
 
 .content_1 {
@@ -133,13 +140,8 @@
     background-color: #b1baba;
     width: 100%;
     border-radius: 10px;
-    font-family: "Caveat", Helvetica, italic, sans-serif;
-    font-size: 25px;
-}
-
-.content_1:hover{
     font-family: "Neucha", Helvetica, sans-serif;
-    color: #08278f;
+    font-size: 25px;
 }
 
 .collapsible:after {
